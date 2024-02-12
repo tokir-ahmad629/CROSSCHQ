@@ -1,0 +1,907 @@
+/*--- Extra large devices (large desktops, 1400px and up) -----*/
+
+@media (min-width: 992px) { 
+	
+	.container{
+		width: 172rem;
+		max-width: 172rem;
+	}
+
+	.footer_widgets .col-lg-2{
+		width: 20.5%;
+	}
+
+	.footer_widgets .col-lg-3{
+		width: 18%;
+	}
+	
+}
+
+
+
+/* ------ Medium devices (tablets, 991px and down) -----*/
+
+@media (max-width: 991px) {
+
+	html{
+		font-size: 60%;
+	}
+
+	.site_header{
+		padding: 2.8rem 0 3rem 0;
+	}
+
+	.hamburger-menu {
+		display: inline-block;
+	}
+
+	.navbar_nav{
+		position: fixed;
+		left: -100vw;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		background: #fff;
+		display: block;
+		transition: all 300ms ease;
+		padding-top: 12rem;
+		padding-left: calc((100% - 720px) / 2 + 1.5rem);
+		padding-right: calc((100% - 720px) / 2 + 1.5rem);
+	}
+
+	.navbar_nav.show{
+		left: 0;
+	}
+
+	.menu{
+		display: block;
+		padding-right: 0;
+	}
+
+	.menu>li{
+		margin-bottom: 2rem;
+	}
+
+	.dropdown-menu{
+		width: 100%;
+		position: unset !important;
+		transform: translate(0, 0) !important;
+		margin-top: 1rem !important;
+	}
+
+	.sign_button{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0 1.5rem;
+		position: absolute;
+		left: 0;
+		bottom: 3rem;
+		width: 100vw;
+	}
+
+	.sign_button .demo_text{
+		padding: 1.7rem 3rem;
+	}
+
+	a.request_btn {
+		margin-right: 0;
+	}
+
+	.header_space{
+		padding-top: 9rem !important;
+	}
+	
+
+	.crosscha_Date p{
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
+	}
+
+	.hero_sh1 {
+		width: 150rem;
+	}
+
+	.hero_sh2 {
+		width: 17.5rem;
+	}
+
+	.hero_sh3 {
+		top: 40rem;
+		width: 17.5rem;
+	}
+	
+	.quality_hire h2 {
+		font-size: 5.5rem;
+	}
+
+	.quality_hire p {
+		color: #0575B8;
+		padding: 3.4rem 0 4.5rem;
+	}
+
+	.Platform_wrap .row {
+		--bs-gutter-x: 2rem;
+		--bs-gutter-y: 2rem;
+	}
+
+	span.quelity_parsent {
+		font-size: 7rem;
+	}
+
+	p.quelity_text {
+		font-size: 1.6rem;
+	}
+
+	.work_success_story .row {
+		--bs-gutter-y: 0;
+	}
+
+	.success_story{
+		margin-bottom: 3rem;
+	}
+
+	.library_Store p br{
+		display: none;
+	}
+
+	.box_background{
+		margin-top: 3rem;
+	}
+	
+	.upWork_Success{
+		padding: 4rem;
+	}
+
+	img.success_images {
+		width: 54rem;
+		padding: 0;
+		margin-top: 2rem;
+	}
+
+	.work_success_sh1{
+		display: none;
+	}
+
+	.work_success_sh2{
+		bottom: 10rem;
+		width: 20rem;
+	}
+
+	.grade_security_sh2{
+		display: none;
+	}
+
+	.grade_security_sh1 {
+		width: 36rem;
+	}
+
+	.enterPrise{
+		position: relative;
+	}
+
+	.finally_Quality{
+		display: block;
+		padding: 0;
+		text-align: center;
+	}
+
+	img.logo_size{
+		margin-bottom: 3rem;
+	}
+
+	.ready_actions_sh1{
+		display: none;
+	}
+
+	.ready_actions_sh2 {
+		width: 19.5rem;
+	}
+
+	.quality_hire p{
+		font-size: 2.5rem;
+	}
+
+	.ready_actions .quality_hire h2 {
+		font-size: 4.5rem;
+	}
+
+	.email_section{
+		text-align: center;
+		padding-top: 1rem;
+	}
+
+	input#mc-email{
+		width: 36rem;
+	}
+
+	.socali_iconLink{
+		text-align: center;
+	}
+
+	.icons_fixed{
+		justify-content: center;
+	}
+
+	.footer_actions {
+		padding: 5rem 0 3rem;
+	}
+
+	footer .poducts_desing {
+		margin-top: 3rem;
+	}
+
+	.copyright p{
+		text-align: center;
+	}
+
+	.plaxible_pricing h2{
+		font-size: 5rem;
+	}
+
+	.plaxible_pricing p{
+		font-size: 2.4rem;
+	}
+
+	.plaxible_pricing p br{
+		display: none;
+	}
+
+	.single_border {
+		margin: 2rem 0rem;
+	}
+
+	.price_hero .hero_sh1 {
+		width: 216vw;
+		left: -10rem;
+	}
+
+	.referench_box {
+		padding: 0rem 2.5rem 3rem 2.5rem;
+	}
+	
+	.referns_paragrap{
+		font-size: 1.6rem;
+	}
+
+	.reference_text{
+		font-size: 1.8rem;
+	}
+
+	.referns_paragrap {
+		min-height: 10.5rem;
+		padding-bottom: 2rem;
+	}
+
+	.price_box {
+		min-height: 90rem;
+	}
+
+	.reference_box .row {
+		--bs-gutter-x: 2rem;
+		--bs-gutter-y: 2rem;
+	}
+
+	.building_business {
+		padding: 5rem 5rem 3rem  5rem;
+	}
+
+	.building_business h2 {
+		font-size: 4rem;
+	}
+
+	.building_business p {
+		font-size: 2.4rem;
+		padding: 1.5rem 0 2.5rem;
+	}
+
+	.case_studies {
+		font-size: 2.4rem;
+	}
+
+	.arrow_images img {
+		width: 2rem;
+	}
+
+	.quality_images img {
+		width: 40rem;
+		margin-top: 0;
+	}
+
+	.quality_images{
+		padding-bottom: 3rem;
+	}
+
+	.building_box_sh1 {
+		width: 55.4rem;
+	}
+
+	.ready_actions_sh3 {
+		top: -5rem;
+		left: -5rem;
+	}
+
+	.ready_actions_sh4 {
+		left: -22rem;
+	}
+
+	.traditional_video{
+		width: 100%;
+	}
+
+	.traditional_text h2{
+		font-size: 6.5rem;
+	}
+
+	.traditional_text h4{
+		font-size: 2.6rem;
+	}
+
+	.traditional_text p{
+		font-size: 2.6rem;
+	}
+
+	.traditional_text{
+		padding-bottom: 5rem;
+	}
+
+	.crosschq_hero .hero_sh1 {
+		width: 171rem;
+	}
+
+	.reference_Checking .row {
+		--bs-gutter-y: 3rem;
+	}
+	
+	.images_icon {
+		width: 22rem;
+	}
+
+	.reference_Checking {
+		padding: 6rem 0 8rem 0;
+	}
+
+	.reimagined_images{
+		position: unset;
+		margin: 0;
+	}
+	
+	.reimagined_images img{
+		width: 100%;
+		margin: 0;
+	}
+
+	.reimagined_images.talent_pools_images{
+		position: unset;
+	}
+
+	.reimagined_images.talent_pools_images img{
+		margin: 0;
+		width: 100%;
+	}
+	
+	.reimagined_images.candidate_images {
+		position: unset;
+		margin-left: 0;
+	}
+
+	.reimagined_images.candidate_images img {
+		width: 100%;
+		margin-top: 0;
+	}
+
+	.taient_pools{
+		margin: 0;
+	}
+
+	.reference_Reimagined.great_candidate{
+		margin: 0;
+	}
+
+	.reference_Reimagined{
+		padding-bottom: 0;
+	}
+
+	.reference_Reimagined.great_candidate{
+		padding-bottom: 10rem;
+	}
+
+	.reference_Reimagined_sh1 {
+		top: -44rem;
+		width: 45rem;
+	}
+
+	.exploring_Checking .row {
+		--bs-gutter-y: 3rem;
+	}
+
+	.finally_sh2 {
+		right: 0;
+		bottom: -13rem;
+		z-index: -1;
+		width: 60rem;
+	}
+
+	.ready_actions_sh5 {
+		width: 22rem;
+	}
+
+	.reimagined_images.talent_pools_images{
+		margin: 0;
+	}
+
+	.reference_Reimagined .request_demo.text-uppercase.fw-bold{
+		width: unset;
+	}
+	
+
+
+
+}
+
+
+
+/*----- sm devices (tablets, 767px and down) -----*/
+
+@media (max-width: 767px) {
+
+	.navbar_nav{
+		padding-left: calc((100% - 540px) / 2 + 1.5rem);
+		padding-right: calc((100% - 540px) / 2 + 1.5rem);
+	}
+
+	.quality_hire h2 {
+		font-size: 5rem;
+	}
+
+	.quality_hire p {
+		padding: 1.5rem 2rem 3.5rem 2rem;
+	}
+
+	.platform_container {
+		padding: 8rem 0;
+	}
+
+	.platform_design{
+		padding: 3rem;
+	}
+	
+	.platform_text h3{
+		font-size: 3rem;
+	}
+
+	.platform_design .box_img {
+		height: 32rem;
+	}
+
+	.platform_design img.one {
+		width: 31rem;
+	}
+	
+	.platform_design img.two {
+		width: 30.4rem;
+	}
+
+	.platform_design img.three {
+		width: 35rem;
+	}
+	
+	.platform_design img.four {
+		width: 30.1rem;
+	}
+
+	.platform_design img.five {
+		width: 34.3rem;
+	}
+
+	.platform_design img.six {
+		width: 33.4rem;
+	}
+
+	.Platform_wrap {
+		padding-bottom: 8rem;
+	}
+
+	p.quelity_text {
+		font-size: 2rem;
+	}
+
+	.work_succes{
+		padding-top: 5.5rem;
+	}
+
+	.increase_quality{
+		padding-bottom: 3rem;
+	}
+
+	.work_success_story {
+		padding: 8rem 0 5rem;
+	}
+
+	.success_story .img1 {
+		width: 16rem;
+	}
+
+	.william_paragrap p {
+		font-size: 3rem;
+	}
+
+	.willim_text {
+		margin-bottom: -6rem;
+	}
+	
+	.success_story {
+		margin-bottom: 2rem;
+	}
+
+	.box_background {
+		margin-top: 2rem;
+	}
+
+	.upWork_Success {
+		padding: 3rem;
+	}
+
+	.upWork_Success h2 {
+		font-size: 3.2rem;
+		padding: 0;
+	}
+
+	img.success_images {
+		width: 36rem;
+		margin-top: .5rem;
+	}
+
+	.library_Box{
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+
+	.success_story.third_section img {
+		width: 15rem;
+	}
+
+	.library_Store p {
+		font-size: 2rem;
+		font-weight: 500;
+	}
+
+	.story_communit h2,
+	.library_Store h2 {
+		font-size: 3rem;
+	}
+
+	.library_Store {
+		width: 80%;
+	}
+
+	.partner_logo {
+		width: 17rem;
+	}
+
+	.grade_security_sh1 {
+		width: 27rem;
+	}
+
+	h3.text-center.fw-bold {
+		font-size: 3.5rem;
+		color: #003366;
+		margin-bottom: 0;
+	}
+
+	.grade_security .title {
+		padding-bottom: 4rem;
+	}
+
+	.enterPrise h3 {
+		font-size: 3rem;
+	}
+
+	.enterPrise p {
+		font-size: 1.8rem;
+	}
+
+	img.secure_imgs {
+		margin: 5.2rem 0 4rem;
+	}
+
+	.enterPrise_images {
+		padding-top: 5rem;
+	}
+
+	.enterPrise_images img {
+		width: 100%;
+	}
+
+	.finally_Quality h3 {
+		font-size: 3.2rem;
+	}
+
+	img.logo_size {
+		width: 13rem;
+	}
+
+	.ready_actions {
+		padding: 10rem 0;
+	}
+
+	.quality_hire p {
+		padding: 2.5rem 0rem 3.5rem 0rem;
+		font-size: 2rem;
+	}
+
+	.quality_hire p br{
+		display: none;
+	}
+
+	.ready_actions_sh2 {
+		width: 10.5rem;
+	}
+
+	.ready_actions .quality_hire h2 {
+		font-size: 4rem;
+	}
+
+	.audio_setup audio {
+		width: 100%;
+	}
+
+	.resize_logo img {
+		width: 13rem;
+	}
+
+	.footer_top img {
+		width: 28rem;
+	}
+
+	footer .border_line{
+		margin-bottom: 1rem;
+	}
+
+	input#mc-email {
+		width: 25rem;
+	}
+
+	.copyright p {
+		font-size: 1.5rem;
+	}
+
+	.plaxible_pricing h2 {
+		font-size: 3.8rem;
+	}
+
+	.plaxible_pricing h2 br{
+		display: none;
+	}
+
+	.plaxible_pricing p{
+		font-size: 2rem;
+	}
+
+	.single_border {
+		margin: 2rem 0rem 1.2rem;
+	}
+
+	.plaxible_pricing {
+		padding-top: 5rem;
+	}
+
+	.price_hero .hero_sh1 {
+		width: 190rem;
+		left: -26rem;
+	}
+
+	.pricing_images img {
+		width: 100%;
+		margin-top: 2rem;
+	}
+
+	.price_hero .hero_sh3 {
+		top: 40rem;
+	}
+
+	.price_box {
+		min-height: auto;
+	}
+
+	.referns_paragrap {
+		font-size: 1.8rem;
+	}
+
+	.building_business {
+		padding: 2.5rem 2.5rem 3rem 2.5rem;
+	}
+
+	.building_business h2 {
+		font-size: 3rem;
+	}
+
+	.building_business p {
+		font-size: 2rem;
+		padding: 1.5rem 0 2.5rem;
+	}
+
+	.case_studies {
+		font-size: 2rem;
+	}
+
+	.arrow_images img {
+		margin-left: 1rem;
+		width: 3rem;
+		margin-top: 0;
+	}
+
+	.quality_images img {
+		width: 32rem;
+	}
+
+	.Partnership.border_bottom {
+		border-bottom: 2rem solid #94EBE5;
+	}
+
+	.ready_actions_sh4 {
+		left: -32rem;
+	}
+
+	.ready_actions_sh3 {
+		top: -10rem;
+		left: -9rem;
+	}
+
+	.traditional_text h2 {
+		font-size: 4rem;
+		padding: 1.5rem 0 2rem;
+	}
+
+	.traditional_text h4 {
+		font-size: 2.4rem;
+	}
+
+	.traditional_text p {
+		font-size: 2.4rem;
+	}
+
+	.crosschq_hero .hero_sh1 {
+		width: 130rem;
+	}
+
+	.images_icon {
+		width: 14rem;
+	}
+
+	.images_icon img.top_icons {
+		width: 3rem;
+		margin-top: -9rem;
+	}
+
+	.checking_box img {
+		width: 10rem;
+	}
+
+	.references_heading h3 {
+		font-size: 2.5rem;
+		margin-top: 1rem;
+	}
+
+	.checking_Solution {
+		padding: 3rem 3rem 0.5rem 3rem;
+	}
+
+	.reference_Checking .row {
+		--bs-gutter-y: 2rem;
+	}
+
+	.reference_Reimagined_sh1 {
+		top: -27rem;
+		width: 25rem;
+	}
+
+	.reimagined_images{
+		margin-left: -2rem;
+	}
+
+	.reimagined_text h3{
+		font-size: 3rem;
+	}
+
+	.reimagined_text p {
+		font-size: 2.2rem;
+		padding: 2.5rem 0;
+	}
+
+	.reimagined_text.candidate p {
+		font-size: 2.2rem;
+	}
+
+	.reimagined_images.candidate_images,
+	.reimagined_images.talent_pools_images{
+		margin-left: -2rem;
+	}
+
+	.exploring_heading h2{
+		font-size: 3rem;
+	}
+
+	.exploring_hiring .box_logo {
+		height: 9.3rem;
+	}
+
+	.product_container {
+		min-height: 26rem;
+		padding-bottom: 3rem;
+	}
+
+	.product_text h2 {
+		font-size: 2.5rem;
+	}
+
+	.product_text a{
+		font-size: 2.2rem;
+	}
+
+	.exploring_hiring .sh {
+		width: 25.3rem;
+	}
+
+	.exploring_Checking .row {
+		--bs-gutter-y: 2rem;
+	}
+
+	.exploring_Checking {
+		padding: 6rem 0 8rem 0;
+	}
+
+	.finally_sh1 {
+		left: 0;
+		bottom: -25rem;
+		z-index: -1;
+		width: 21.5rem;
+	}
+
+	.finally_sh2 {
+		right: 0;
+		bottom: -38rem;
+		z-index: -1;
+		width: 35rem;
+	}
+
+	.ready_actions_sh5 {
+		top: -66rem;
+	}
+
+}
+
+
+/*----- xs devices (landscape phones, 575px and down) -----*/
+
+@media (max-width: 575px) {
+
+	html{
+		font-size: 2.3vw;
+	}
+
+	.navbar_nav{
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
+	.hero_sh1 {
+		top: 0;
+		left: -3rem;
+		width: 100rem;
+	}
+
+	.price_hero .hero_sh1 {
+		width: 173rem;
+	}
+
+	.crosschq_hero .hero_sh1 {
+		width: 101rem;
+	}
+
+}
+
+

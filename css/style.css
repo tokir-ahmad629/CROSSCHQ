@@ -1,0 +1,1553 @@
+/* ---------------- Google fonts ------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,700;1,900&display=swap');
+
+
+/* ---------------- Basic css ------------------ */
+
+html {
+	font-size: 0.520vw;
+}
+
+:root {
+	scroll-behavior: unset;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+footer,
+header,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	transition: 200ms;
+	color: inherit;
+}
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+/* body */
+body {
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.3;
+	font-family: 'Lato', sans-serif;
+	background-color: #EEEEEE;
+	color: #333b55;
+	overflow-x: hidden;
+}
+
+.container {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+/* ---------------- Header area ------------------ */
+.site_header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1024;
+	width: 100vw;
+	padding: 4rem 0;
+	transition: 300ms;
+}
+
+/*sticky*/
+.site_header.sticky {
+	animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+	box-shadow: 0 .8rem 1rem 0 rgba(0, 0, 0, .04);
+	background: #fff;
+}
+
+.header_setup {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+}
+
+.logo img {
+	width: 24.5rem;
+}
+
+
+.navbar_nav{
+	display: flex;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	gap: 0 6rem;
+	margin-left: auto;
+	padding-right: 6rem;
+}
+
+
+.menu>li>a {
+	display: inline-flex;
+	align-items: center;
+	color: #333333;
+	font-weight: 600;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	gap: 0 .5rem;
+}
+
+.menu>li>a.show,
+.menu>li>a:hover{
+	color: #0575B8;
+}
+
+.menu>li>a .arrow{
+	width: 1rem;
+}
+
+
+.dropdown-menu{
+	border-radius: .6rem;
+	border: none;
+	box-shadow: 0 0 1rem rgb(0, 0, 0, 0.1);
+}
+
+.dropdown-item{
+	color: #333333;
+	font-weight: 600;
+	font-size: 1.8rem;
+	padding: 1rem 1.5rem;
+}
+
+
+
+/* Request & Sign Button Design */
+.demo_text {
+	font-size: 1.6rem;
+	font-weight: 900;
+	border-radius: 1rem;
+	padding: 1.5rem 4rem;
+	letter-spacing: 0.1rem;
+	font-weight: bold;
+	color: #fff;
+	transition: 300ms;
+	display: inline-block;
+	border-radius: .7rem;
+}
+
+a.request_btn {
+	background: #F06792;
+	margin-right: 2.5rem;
+}
+
+a.request_btn:hover{
+	background: #cd4e76;
+	color: #fff;
+}
+
+a.sign_btn {
+	background: #0575B8;
+	display: inline-flex;
+	align-items: center;
+	gap: 0 .8rem;
+}
+
+a.sign_btn:hover{
+	color: #fff;
+	background: #198acb;
+}
+
+
+.request_btn:hover {
+	background-color: #FFFFFF;
+	color: #000;
+}
+
+.sign_btn:hover {
+	color: #000;
+}
+
+
+
+/*Hamburger menu*/
+.hamburger-menu {
+	cursor: pointer;
+	position: relative;
+	display: none;
+	z-index: 999;
+}
+
+.hamburger-menu span {
+	background: #003366;
+	width: 3rem;
+	height: .3rem;
+	display: block;
+	margin: .5rem 0;
+	transition: all 0.3s ease;
+}
+
+.hamburger-menu:hover .line-top {
+	transform: translateY(-100%);
+}
+
+.hamburger-menu:hover .line-bottom {
+	transform: translateY(100%);
+}
+
+.hamburger-menu .line-top.current {
+	transform: translateY(200%) rotate(135deg);
+}
+
+.hamburger-menu .line-center.current {
+	opacity: 0;
+}
+
+.hamburger-menu .line-bottom.current {
+	transform: translateY(-325%) rotate(-135deg);
+}
+
+
+
+
+/* Hero Secton Start */
+
+
+.hero_section{
+	position: relative;
+}
+
+.header_space{
+	padding-top: 13rem !important;
+}
+
+.sh{
+	position: absolute;
+}
+
+.hero_sh1{
+	top: -19rem;
+	left: 0rem;
+	width: 102vw;
+	z-index: -1;
+}
+
+.hero_sh2{
+	left: 0;
+	top: 36rem;
+	z-index: -1;
+	width: 29.5rem;
+}
+
+.hero_sh3{
+	right: 0;
+	top: 21rem;
+	width: 29.5rem;
+	z-index: -1;
+}
+
+a.Read_all.demo_text {
+	background: #00CFC1;
+	padding: 0.8rem 1.5rem;
+	font-weight: bold;
+	letter-spacing: 0;
+	flex-shrink: 0;
+}
+
+a.Read_all.demo_text:hover{
+	background: #03b0a5;
+	color: #fff;
+}
+
+.crosscha_Date {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(255, 255, 255, .52);
+	padding: .9rem 0;
+}
+
+.crosscha_Date p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #0575B8;
+	margin-right: 2rem;
+}
+
+/* Hero Secton Ends */
+/* Quality of Hire Platform Start */
+.bg-color {
+	background-color: #00ADFF;
+}
+
+.platform_container {
+    padding: 11rem 0 10rem;
+}
+
+.quality_design{
+    text-align: center;
+}
+
+.quality_hire h2 {
+	font-size: 8.6rem;
+	color: #003366;
+	font-weight: 900;
+	line-height: 1.127;
+}
+
+
+.quality_hire p {
+	color: #0575B8;
+	padding: 3.4rem 0 6.5rem;
+}
+
+a.request_demo {
+	padding: 2.4rem 4rem;
+    background: #F06792;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+	font-weight: 900;
+    letter-spacing: 0.1rem;
+	border-radius: .7rem;
+    transition: 300ms;
+	display: inline-block;
+}
+
+a.request_demo:hover {
+	background-color: #cd4e76;
+}
+
+/* Hire Platform Start */
+
+.Platform_wrap{
+	padding-bottom: 10rem;
+}
+
+.Platform_wrap .row{
+	--bs-gutter-x: 4.5rem;
+	--bs-gutter-y: 5rem;
+}
+
+.platform_bg_color {
+	background-color: #EEEEEE !important;
+}
+
+.platform_design {
+	background: #FFFFFF;
+	border-radius: 1rem;
+	padding: 4rem 4rem 2.5rem 4rem;
+	border: 1px solid #E2E2E2;
+}
+
+.platform_text h3 {
+	font-size: 4rem;
+	font-weight: 900;
+	line-height: 1;
+	color: #003366;
+}
+
+img.edit_image {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	width: 30rem;
+}
+
+.platform_design .box_img{
+	display: flex;
+	align-items: end;
+	justify-content: center;
+	height: 39rem;
+	padding-bottom: 1rem;
+}
+
+.platform_design img.one{
+	width: 36rem;
+}
+
+.platform_design img.two{
+	width: 35.4rem;
+}
+
+.platform_design img.three{
+	width: 40rem;
+}
+
+.platform_design img.four{
+	width: 35.1rem;
+}
+
+.platform_design img.five{
+	width: 38.3rem;
+}
+
+.platform_design img.six{
+	width: 37.4rem;
+}
+
+
+a.demo_more {
+	font-size: 2rem;
+	color: #5151c4;
+	text-decoration: underline;
+}
+
+a.demo_more:hover{
+	color: #F06792;
+}
+
+/* Main Setcton Ends */
+
+
+/* partner Hire section Start */
+.work_succes {
+    background: #FFFFFF;
+    padding: 2.5rem 0 3.5rem;
+}
+
+span.quelity_parsent {
+	font-size: 9rem;
+	color: #003366;
+	font-weight: 300;
+}
+
+p.quelity_text {
+	font-size: 2rem;
+	color: #0575B8;
+	font-weight: 700;
+	padding-top: 0.5rem;
+}
+
+/* partner Hire section Ends */
+
+
+/* Upwork Success Story Start  */
+.work_success_story {
+    padding: 9rem 0 5rem;
+}
+
+.work_success_story .row{
+	--bs-gutter-x: 4.5rem;
+	--bs-gutter-y: 5rem;
+}
+
+.success_story {
+	/* max-width: 31%;
+	margin-left: 3rem; */
+	margin-bottom: 3rem;
+	border-radius: 1rem;
+}
+
+.work_success_sh1{
+	right: 0;
+	bottom: -11rem;
+	z-index: -1;
+	width: 68.4rem;
+}
+
+.work_success_sh2{
+	right: 0;
+	bottom: -20rem;
+	z-index: -1;
+	width: 29.5rem;
+}
+
+.william_paragrap {
+	border-top: 2px solid #0575B8;
+	width: 90%;
+	margin: 0 auto;
+	padding: 3rem;
+	margin-top: 2rem;
+}
+
+.frist_side {
+	background-color: #00ADFF;
+}
+
+.upWork_story.william_tincup {
+	/* display: flex;
+    align-items: center;
+    justify-content: center; */
+	margin-left: 5rem;
+}
+
+.story_box {
+	display: flex;
+	align-items: center;
+	margin-left: -5rem;
+	justify-content: space-around;
+}
+
+.willim_text {
+	margin-bottom: -10rem;
+	margin-left: -3rem;
+}
+
+.willim_text h3 {
+	font-size: 2.8rem;
+	font-weight: bold;
+	color: #003366;
+}
+
+.willim_text p{
+	font-size: 2rem;
+}
+
+.william_paragrap p {
+	font-size: 4.3rem;
+	font-weight: 900;
+	font-style: italic;
+	color: #fff;
+}
+
+.success_story img {
+	width: 20rem;
+}
+
+.second_side {
+	background-color: #00CFC1;
+}
+
+.upWork_Success h2 {
+	font-size: 4rem;
+	font-weight: 800;
+	letter-spacing: .1rem;
+	color: #003366;
+	padding: 1.4rem;
+}
+
+.upWork_Success span{
+    font-size: 2.8rem;
+}
+
+span.chang_color {
+	color: #003366;
+	padding: 1rem;
+}
+
+img.success_images {
+	width: 54rem;
+	padding: 4rem;
+}
+
+.library_Box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #F06792;
+	border-radius: 1rem;
+	padding: 1.7rem;
+	padding-left: 4.5rem;
+	padding-right: 6rem;
+}
+
+.library_Store {
+	width: 42%;
+}
+
+.library_Store h2 {
+	color: #003366;
+    font-size: 4rem;
+    text-align: start;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+}
+
+.story_communit h2 {
+	color: #00CFC1;
+	font-size: 4rem;
+}
+
+.library_Store p {
+    color: #fff;
+    text-align: start;
+    font-size: 2.3rem;
+    padding-top: 7px;
+	font-weight: bold;
+}
+
+.box_background {
+	background-color: #0575B8;
+	margin-top: 5rem;
+	padding: 2rem;
+	padding-left: 4.5rem;
+	padding-right: 4rem;
+}
+
+
+/* Upwork Success Story Ends  */
+
+
+
+
+/* Integrations and Partnerships Start */
+
+.Partnership {
+	padding: 5rem 0 8rem;
+	background-color: #FFFFFF;
+}
+
+.Partnership.border_bottom{
+	border-bottom: 3.5rem solid #94EBE5;
+}
+
+.Partnership .row{
+	--bs-gutter-y: 4.5rem;
+}
+
+.Partnership h2 {
+	font-size: 4rem;
+	color: #003366;
+	letter-spacing: 0.1rem;
+	font-weight: 800;
+	padding-bottom: 5rem;
+}
+
+.partner_logo{
+	width: 18rem;
+}
+
+/* Integrations and Partnerships Ends */
+
+
+
+/* Enterprise Grade Security Start */
+.grade_security_section {
+	background-color: #94EBE5;
+	padding: 6rem 0 7.5rem;
+	position: relative;
+}
+
+.grade_security_sh1{
+	top: 0;
+	left: 0;
+	width: 44rem;
+}
+
+.grade_security_sh2{
+	left: 0;
+	top: -20rem;
+	width: 76.5rem;
+}
+
+.grade_security .title{
+	padding-bottom: 7rem;
+}
+
+.grade_security .row{
+	--bs-gutter-x: 4.5rem;
+}
+
+.grade_security h3 {
+	font-size: 2.8rem;
+	letter-spacing: .1rem;
+}
+
+h3.text-center.fw-bold {
+	font-size: 4rem;
+	color: #003366;
+	margin-bottom: 1.5rem;
+}
+
+
+.enterPrise {
+	background-color: #FFFFFF;
+	border-radius: 1rem;
+	text-align: center;
+	border: 1px solid #E2E2E2;
+}
+
+.enterPrise h3 {
+    font-size: 4rem;
+    font-weight: 800;
+    padding-top: 3rem;
+    color: #003366;
+}
+
+.enterPrise p {
+	font-size: 2.3rem;
+	margin: 0 auto;
+	color: #0575B8;
+	font-weight: bold;
+	padding-top: 1.7rem;
+}
+
+.enterPrise .icon1{
+	width: 13.7rem;
+}
+
+.enterPrise .icon2{
+	width: 12.4rem;
+}
+
+img.secure_imgs {
+	max-width: 13.7rem;
+	margin: 5.2rem 0;
+}
+
+img.secure_imgg {
+	max-width: 12.4rem;
+	margin: 4.5rem 0;
+}
+
+/* Enterprise Grade Security Ends */
+
+
+
+/* Take Our Word For it Start */
+.Our_Word {
+	padding: 7rem 0 9rem;
+	background-color: #fff;
+	position: relative;
+	z-index: 1;
+}
+.enterPrise_images {
+    padding-top: 6rem;
+}
+.enterPrise_images img {
+	width: 65rem;
+}
+
+/* Take Our Word For it Ends */
+
+
+/* Finally we can easily measure Quality Start */
+.finally_color {
+	background-color: rgb(0, 173, 255, 0.42);
+	padding: 6rem 0;
+	position: relative;
+	z-index: 1;
+}
+
+.z-index-0{
+	z-index: unset !important;
+}
+
+.finally_sh1{
+	left: 0;
+	bottom: -5rem;
+	z-index: -1;
+	width: 29.5rem;
+}
+
+.finally_sh2{
+	right: 0;
+	bottom: -30rem;
+	z-index: -1;
+	width: 116rem;
+}
+
+.finally_Quality {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	padding: 3.5rem 0;
+	gap: 0 7rem;
+}
+
+.finally_Quality h3 {
+	font-size: 4.3rem;
+    color: #fff;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.finally_Quality h4 {
+	color: #003366;
+    font-weight: 800;
+    font-size: 2.7rem;
+    margin: 1.7rem 0;
+}
+
+img.logo_size {
+	width: 15rem;
+}
+
+/* Finally we can easily measure Quality Ends */
+
+
+/* Ready to See Crosschq Section Start */
+.ready_actions {
+	padding: 15rem 0 8rem;
+	position: relative;
+}
+
+.quality_button.request_demo {
+    margin-bottom: 4rem;
+}
+
+p.actions_text{
+   font-size: 3.3rem;
+}
+
+h2.action_fixed {
+    margin-top: 10rem;
+}
+
+.ready_actions_sh1{
+	right: 0;
+	bottom: -24rem;
+	z-index: -1;
+	width: 114.6rem;
+}
+
+.ready_actions_sh1.v1{
+	right: -78rem;
+	bottom: -23rem;
+}
+
+.ready_actions_sh2{
+	left: 0;
+	bottom: 0;
+	width: 29.5rem;
+	pointer-events: none;
+}
+
+.ready_actions_sh3{
+	top: 0;
+	left: 0;
+	width: 37.3rem;
+	pointer-events: none;
+}
+
+.ready_actions_sh4{
+	left: 0;
+	bottom: 0;
+	width: 72rem;
+	pointer-events: none;
+}
+
+.ready_actions_sh5{
+	left: 0;
+	top: -60rem;
+	z-index: -1;
+	width: 37rem;
+}
+
+
+/* Ready to See Crosschq Section Ends */
+
+/* === Footer Section Start === */
+/* Footer Section Start */
+.footer_actions {
+	background-color: #282E38;
+	padding: 6rem 0;
+}
+
+.footer_top img {
+	width: 32rem;
+}
+
+.resize_logo img {
+	width: 16rem;
+}
+
+p.verify_text {
+	font-size: 2rem;
+	color: #798593;
+}
+
+.audio_setup audio {
+	width: 43rem;
+	margin-top: 3rem;
+}
+
+
+.border_line {
+	border-bottom: 1px solid gray;
+	margin: 4rem 0px;
+	opacity: .5;
+}
+
+.poducts_desing ul li a {
+	font-size: 1.7rem;
+    color: #798593;
+    line-height: 4rem;
+}
+
+.poducts_desing ul li a:hover{
+	color: #fff;
+}
+
+
+.socali_iconLink {
+    margin-top: 4rem;
+}
+
+.icons_fixed {
+	padding-bottom: 1.5rem !important;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0 1.5rem;
+}
+
+.icons_fixed a:hover{
+	opacity: .7;
+}
+
+
+/* .poducts_desing.products_list{
+	padding-left: 7rem;
+} */
+
+.your_email {
+	display: inline-flex;
+	border-radius: .4rem;
+	overflow: hidden;
+}
+
+.your_email button{
+	width: 9rem;
+	background-color: #798593;
+	border: none;
+	transition: 300ms;
+}
+
+.your_email button:hover{
+	background-color: #F06792;
+}
+
+.your_email button img{
+	width: 2.8rem;
+}
+
+input#mc-email {
+	height: 5rem;
+	border: 1px solid #363F50;
+	background-color: #363F50;
+	width: 20rem;
+	font-size: 2rem;
+	color: #fff;
+	padding: 0 2rem;
+	font-size: 1.7rem;
+	font-weight: 400;
+}
+
+.click_btn img {
+	width: 8rem;
+}
+
+.imag_size img {
+	width: 3.6rem;
+}
+
+/* Footer Section Ends */
+/* webside Develop Start */
+.copyright_design {
+	background: #1E242E;
+	padding: 1.6rem 0;
+}
+.copyright p{
+	color: #798593;
+	font-size: 1.7rem;
+}
+
+/* webside Develop End */
+
+
+
+
+
+/* Meet Your Nees Side Start */
+
+.plaxible_pricing {
+    padding-top: 6rem;
+}
+
+.price_hero .hero_sh1 {
+	top: 0;
+	width: 106vw;
+}
+
+.price_hero .hero_sh2{
+	top: 110rem;
+}
+
+.price_hero .hero_sh3{
+	top: 15rem;
+}
+
+.plaxible_pricing h2 {
+    font-size: 6.4rem;
+    color: #003366;
+    font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.plaxible_pricing p {
+    font-size: 3.2rem;
+    color: #0575B8;
+}
+
+.single_border {
+    border-bottom: 1px solid #fff;
+    margin: 4rem 0rem;
+}
+
+p.priceng_text {
+    font-size: 2.2rem;
+    color: #0575B8;
+}
+ 
+h3.features_heading {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+	font-weight: 700;
+	color: #0575B8;
+}
+
+.pricing_images{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing_images img {
+    width: 57rem;
+}
+
+/* Meet Your Nees Side Ends */
+
+/* Reference & Talent Wall & Insights & Voice Section Start */
+
+.reference_box{
+	padding-top: 7.5rem;
+}
+
+.reference_box .row{
+	--bs-gutter-x: 2.5rem;
+	--bs-gutter-y: 5rem;
+}
+
+.price_box {
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+	min-height: 95rem;
+	border: 1px solid #E2E2E2;
+}
+
+.colum_header_top {
+    background-color: #0575B8;
+    padding: 1.5rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.colum_header_top.Talent_Wall {
+	background-color: #003366;
+}
+
+.colum_header_top.Insights {
+    background-color: #00CFC1;
+}
+
+.colum_header_top.Voice {
+	background-color: #00ADFF;
+}
+
+.referns_text.fw-bold {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 2.5rem 0;
+	color: #0575B8;
+}
+
+.referns_text.talent_text.fw-bold{
+    color: #003366;
+}
+
+.referns_text.Insights_text.fw-bold {
+    color: #00CFC1;
+}
+
+.referns_text.Voice_text.fw-bold {
+    color: #00ADFF;
+}
+
+.referns_paragrap {
+    font-size: 2rem;
+    padding: 0 2.5rem;
+	min-height: 14.5rem;
+	padding-bottom: 4rem;
+}
+
+.starting_text {
+    font-size: 1.9rem;
+	color: #0575B8;
+}
+
+.priceng_box {
+	color: #003366;
+    margin-top: 1rem;
+	font-size: 3.1rem;
+}
+
+.border_colum {
+    border-bottom: 1px solid #dddddddd;
+    margin: 4rem 3rem;
+}
+
+.referench_box {
+    padding: 0rem 4rem 3rem 4rem;
+	
+}
+
+.table_prices {
+    font-weight: 800;
+}
+
+
+
+.referench_list{
+    display: flex;
+    align-items: start;
+    text-align: start;
+	padding-bottom: 1rem;
+}
+
+
+.referench_list .icons_size {
+    width: 2rem;
+    margin-top: .2rem;
+}
+
+.reference_text {
+    margin-left: 1.5rem;
+    font-size: 1.9rem;
+	line-height: 1.42;
+}
+
+
+/* Reference & Talent Wall & Insights & Voice Section Ends */
+
+/* Need building business Side Start */
+.building_box {
+    padding: 5.5rem 0;
+}
+
+.building_box_sh1{
+	right: 0;
+	bottom: 0;
+	width: 125.4rem;
+	z-index: -1;
+}
+
+.flexible_container {
+	border-radius: 1rem;
+}
+
+.bg_white{
+	background-color: #fff;
+}
+
+.building_business {
+    padding: 6rem 10rem 6rem 9rem;
+}
+
+.building_business h2 {
+	font-size: 5.9rem;
+    color: #F06792;
+    font-weight: 600;
+}
+
+.building_business p {
+    font-size: 3.5rem;
+    color: #003366;
+	padding: 2.5rem 0 3.5rem;
+
+}
+
+.border_colors {
+    border-bottom: 1px solid #c6bdbd;
+}
+
+.crossch_check{
+	display: flex;
+	align-items: center;
+	margin-top: 3rem;
+}
+
+.case_studies {
+    font-size: 3rem;
+    color: #00ADFF;
+    font-weight: 700;
+	font-style: italic;
+	line-height: 1;
+}
+
+.crossch_check:hover .case_studies{
+	color: #00CFC1;
+}
+
+.arrow_images img{
+    margin-left: 1.5rem;
+	width: 3rem;
+	margin-top: 0.5rem;
+}
+.quality_images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quality_images img {
+	width: 49rem;
+	margin-top: 5.5rem;
+}
+
+/* Need building business Side Ends */
+
+
+
+
+
+
+/* Not Your Traditional Reference Check Secton Start */
+.referench_boxxs {
+    padding: 8rem 0;
+}
+
+.traditional_text h4 {
+	font-size: 3rem;
+	color: #0575B7;
+	margin-top: -1.5rem;
+}
+
+.traditional_text h2 {
+	font-size: 8rem;
+	line-height: 1.12;
+	font-weight: 900;
+	color: #003366;
+	padding: 2.5rem 0;
+}
+
+.traditional_text p {
+    font-size: 3.1rem;
+	color: #0575B7;
+}
+
+.traditional_text a {
+    margin-top: 3rem;
+}
+
+.traditional_video{
+	width: 103rem;
+}
+
+.traditional_video img{
+	width: 100%;
+}
+
+
+
+/* Not Your Traditional Reference Check Secton End */
+
+/* Reference Checking Solution Section Start */
+.reference_Checking {
+    padding: 6rem 0 18rem 0;
+}
+
+.reference_Checking .row{
+	--bs-gutter-x: 4.5rem;
+	--bs-gutter-y: 5rem;
+}
+
+.checking_Solution {
+    background: #FFFFFF;
+    border-radius: 1rem;
+    padding: 4rem 4rem 2.5rem 4rem;
+	border: 1px solid #E2E2E2;
+}
+
+.reference_Reimagined_sh1{
+	right: 0;
+	top: -40rem;
+	z-index: -1;
+	width: 76rem;
+}
+
+.reference_Reimagined_sh2 {
+	top: 5rem;
+	right: 8rem;
+	z-index: -1;
+	width: 90.3rem;
+}
+
+.reference_Reimagined .request_demo.text-uppercase.fw-bold{
+	width: 23.5rem;
+	text-align: center;
+}
+
+.checking_box {
+    display: flex;
+    align-items: center;
+}
+
+.images_icon {
+    width: 40%;
+}
+
+.references_heading {
+    width: 60%;
+}
+.images_icon img.top_icons{
+	width: 5rem;
+	margin-top: -11rem;
+}
+
+.checking_box img {
+    width: 13.9rem;
+    margin: 0px -2rem 0 0;
+}
+
+.references_heading h3 {
+	font-size: 3.5rem;
+    color: #003366;
+    font-weight: 800;
+	margin-top: 5rem;
+}
+
+.solution_paragrap p {
+    font-size: 2rem;
+	color: #808080;
+	padding: 3rem 0 4rem 0;
+}
+
+/* Reference Checking Solution Section Ends */
+
+/* Reference Checks Reimagined Sections Start */
+.reference_Reimagined {
+    background-color: #FFFFFF;
+    padding: 6rem 0;
+}
+
+.reimagined_text{
+	position: relative;
+}
+
+.reimagined_text h3 {
+    font-size: 4rem;
+    color: #003366;
+    font-weight: 800;
+}
+
+.reimagined_text p {
+    font-size: 3rem;
+    color: #0575B7;
+    font-weight: 500;
+    padding: 3.5rem 0;
+}
+
+.reimagined_images {
+	position: absolute;
+	margin-left: 14.5rem;
+}
+
+.reimagined_images img {
+	width: 94rem;
+    margin-top: -13rem;
+}
+
+.great_candidate_sh1{
+	left: 0;
+	top: -38rem;
+	z-index: -1;
+	width: 29.5rem;
+}
+
+.great_candidate_sh2{
+	left: 0;
+	top: -54rem;
+	z-index: -2;
+	width: 86rem;
+}
+
+/* Reference Checks Reimagined Sections Ends */
+
+
+/* Create New Talent Pools Sections Start */
+.taient_pools {
+    margin: 30rem  0 15rem 0;
+}
+
+.reimagined_images.talent_pools_images {
+	position: absolute;
+    margin-left: -7.5rem;
+}
+
+.reimagined_images.talent_pools_images img {
+    width: 106rem;
+    margin-top: -17rem;
+}
+/* Create New Talent Pools Sections Ends */
+
+/* Deliver a Great Candidate Experience Section Start */
+.reference_Reimagined.great_candidate{
+    margin: 27rem 0 15rem 0;
+}
+
+.reimagined_images.candidate_images {
+    position: absolute;
+    margin-left: 21.5rem;
+}
+
+.reimagined_images.candidate_images img {
+    width: 88rem;
+    margin-top: -18rem;
+}
+
+.reimagined_text.candidate p {
+    font-size: 2.8rem;
+}
+
+/* Deliver a Great Candidate Experience Section Ends */
+
+
+
+/* Continue Exploring Hiring Intelligence Products Start */
+.exploring_Checking {
+    padding: 6rem 0 10rem 0;
+}
+
+.exploring_Checking .row{
+	--bs-gutter-x: 4.5rem;
+	--bs-gutter-y: 5rem;
+}
+
+.exploring_heading {
+    margin-bottom: 5rem;
+}
+
+.exploring_heading h2{
+    font-size: 4rem;
+    background-color: #003366;
+    color: #fff;
+    padding: 2rem 0;
+    border-radius: 1rem;
+}
+
+.exploring_hiring {
+    background-color: #00ACFF;
+    border-radius: 1rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.product_Logo{
+	background-color: #EF6791;
+}
+
+.product_other{
+	background-color: #00CEC0;
+}
+
+.product_higing{
+	background-color: #0575B7;
+}
+
+.exploring_hiring .box_logo {
+    height: 16.3rem;
+}
+
+.product_colum {
+    border-bottom: .2rem solid #FFFFFF;
+    margin: 3rem 5rem 0 5rem;
+}
+
+.product_container {
+    padding: 6rem 3rem 7rem 3rem;
+	min-height: 35rem;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	z-index: 1;
+
+}
+
+.exploring_hiring .sh{
+	width: 33.3rem;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.product_container.last_product {
+    padding: 8.6rem 0;
+}
+
+.product_text:not(:last-child) {
+    padding-bottom: 4rem;
+}
+
+.product_text h2 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #003366;
+}
+
+.product_text a {
+    font-size: 2.5rem;
+	display: inline-block;
+}
+
+.product_text a:hover{
+	opacity: .7;
+}
+
+/* Continue Exploring Hiring Intelligence Products Ends */
+
+
+/* Finally we can easily measure Quality Start */
+.finally_descive p {
+    font-size: 2.7rem;
+	color: #003366;
+}
+
+.crosscha_logo img{
+    width: 14.7rem;
+}
+
+/* Finally we can easily measure Quality Ends */
+
+
+
